@@ -1,6 +1,6 @@
 
 
-class deykstra:
+class Deykstra:
     def __init__(self, graph):
         self.graph = graph
 

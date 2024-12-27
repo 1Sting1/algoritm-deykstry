@@ -1,5 +1,5 @@
 from graph import Graph
-from deykstra import deykstra
+from deykstra import Deykstra
 
 def read_graph_from_file(file_path):
     graph = Graph()
@@ -15,7 +15,7 @@ def main():
 
     start_vertex = int(input("Введите первую вершину: "))
     end_vertex = int(input("Введите последнюю вершину: "))
-    dijkstra = deykstra(graph)
+    dijkstra = Deykstra(graph)
 
     shortest_paths, previous_nodes = dijkstra.find_shortest_paths_with_trace(start_vertex)
 
